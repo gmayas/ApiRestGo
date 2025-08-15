@@ -56,3 +56,42 @@ Solo escriba:
 air
 
 Y se reinicia el servicio.
+
+
+Entrar a https://gorm.io/
+
+La fantástica biblioteca ORM para Golang
+
+ORM con todas las funciones
+Asociaciones (tiene uno, tiene muchos, pertenece a, muchos a muchos, polimorfismo, herencia de tabla única)
+Ganchos (antes/después de crear/guardar/actualizar/eliminar/buscar)
+Carga ansiosa con precarga, uniones
+Transacciones, Transacciones anidadas, Punto de guardado, Revertir al punto guardado
+Contexto, modo de declaración preparada, modo de ejecución en seco
+Inserción por lotes, Buscar en lotes, Buscar/Crear con mapa, CRUD con SQL Expr y Context Valuer
+SQL Builder, Upsert, Bloqueo, Optimizador/Índice/Sugerencias de comentarios, Argumento con nombre, Subconsulta
+Clave principal compuesta, índices, restricciones
+Migraciones automáticas
+Registrador
+API de complemento extensible y flexible: Resolución de bases de datos (múltiples bases de datos, división de lectura/escritura) / Prometheus…
+Cada función viene con pruebas.
+Amigable para desarrolladores
+
+Install:
+
+go get -u gorm.io/gorm
+
+Install driver postgres:
+
+go get -u gorm.io/driver/postgres
+
+
+Instalacion del Contenedor de PostgreSQL
+Lo primero es descargar el contenedore:
+
+docker pull postgres
+
+EL siguiente comando es uno de los que más uso cuando desarrollo con postgres
+
+docker run --name some-postgres -e POSTGRES_USER=gmayas -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
