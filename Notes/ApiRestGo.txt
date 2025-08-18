@@ -5,7 +5,7 @@ Inicializacion de Git:
 git init
 git status
 git add .
-git commit -m "first commit"
+git commit -m "gorm, connection, create tablets commit"
 git branch -M main
 git remote add origin https://github.com/gmayas/ApiRestGo.git
 git push -u origin main
@@ -93,5 +93,6 @@ docker pull postgres
 
 EL siguiente comando es uno de los que más uso cuando desarrollo con postgres
 
-docker run --name some-postgres -e POSTGRES_USER=gmayas -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+docker run --name go-apirest-postgres -e POSTGRES_USER=gouser -e POSTGRES_PASSWORD=gopassswor -e POSTGRES_DB=godb -p 5400:5432 -d postgres
 
+psql -U gouser --db godb
