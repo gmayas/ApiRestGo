@@ -5,7 +5,7 @@ Inicializacion de Git:
 git init
 git status
 git add .
-git commit -m "gorm, connection, create tablets commit"
+git commit -m "Methos User, Task commit"
 git branch -M main
 git remote add origin https://github.com/gmayas/ApiRestGo.git
 git push -u origin main
